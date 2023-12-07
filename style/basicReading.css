@@ -1,0 +1,26 @@
+.nav-pills li a {
+    font-size: 30px;
+}
+
+.nav-pills .nav-item a.nav-link.active,
+.nav-pills .nav-item a.nav-link:hover {
+    background-color: #FCA311 !important;
+    color: white !important;
+}
+
+.group {
+    padding: 5px;
+}
+
+.group::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+.group::-webkit-track {
+    border-radius: 100vw;
+  }
+  
+  .group::-webkit-scrollbar-thumb {
+    background-color: #FCA311;
+    border-radius: 100vw;
+  }

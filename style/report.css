@@ -1,0 +1,197 @@
+.marker1 {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    background-color: navy;
+    width: 5px;
+    height: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change color on hover */
+.marker1:hover {
+    background-color: white !important; /* Important to override other styles */
+}
+
+.marker1:hover::after {
+    content: "Machine 1";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: white;
+    color: navy;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+}
+
+
+
+
+.marker2 {
+    position: relative;
+    display: inline-block;
+    background-color: navy;
+    animation: blink 1s infinite; /* Blinking animation */
+}
+
+@keyframes blink {
+    0%, 100% {
+        background-color: red;
+    }
+    50% {
+        background-color: navy;
+    }
+}
+
+.marker2:hover {
+    content: "Machine 2";
+}
+
+.marker2:hover::after {
+    content: "Machine 2";
+}
+
+.marker2::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: white;
+    color: navy;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+}
+
+.report-menu {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+
+.marker3 {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    background-color: navy;
+    width: 5px;
+    height: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change color on hover */
+.marker3:hover {
+    background-color: white !important; /* Important to override other styles */
+}
+
+.marker3:hover::after {
+    content: "Machine 3";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: white;
+    color: navy;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+}
+
+
+
+.marker4 {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    background-color: navy;
+    width: 5px;
+    height: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change color on hover */
+.marker4:hover {
+    background-color: white !important; /* Important to override other styles */
+}
+
+.marker4:hover::after {
+    content: "Machine 4";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: white;
+    color: navy;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+}
+
+
+
+.marker5 {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    background-color: navy;
+    width: 5px;
+    height: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change color on hover */
+.marker5:hover {
+    background-color: white !important; /* Important to override other styles */
+}
+
+.marker5:hover::after {
+    content: "Machine 5";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: white;
+    color: navy;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+}
+
+#miniFormContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Set a high z-index to ensure it's on top */
+    background-color: white; /* Add a background color for better visibility */
+    padding: 20px;
+    display: none;
+    width: 800px;
+  }
+
+  .marker {
+    position: absolute;
+    background-color: navy;
+    width: 5px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}

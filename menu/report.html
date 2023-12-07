@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/basicReading.css">
+    <link rel="stylesheet" href="../style/report.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid" style="background-color: #353334; overflow-y: hidden;">
+        <div class="row">
+          <!-- Start Side Navbar -->
+          <div class="col-sm-auto sticky-top vh-100" style="background-color: #13213C;">
+            <div class="d-flex flex-sm-column flex-row flex-nowrap align-items-center sticky-top" style="background-color: #13213C;">
+                <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center justify-content-between w-100 px-3 align-items-center">
+                  <li class="nav-item">
+                    <a href="./home.html" class="nav-link py-3 px-2" title="Home" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="BasicReading">
+                        <i class='bx bx-home' style="font-size: 30px; color: #FFFFFF;"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="./basicReading.html" class="nav-link py-3 px-2" title="Basic Reading" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="BasicReading">
+                          <i class='bx bxs-tachometer' style="color: #FFFFFF;"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="./powerQuality.html" class="nav-link py-3 px-2" title="Power Quality" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="PowerQuality">
+                          <i class='bx bxs-car-battery' style="color: #FFFFFF;"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="./report.html" class="nav-link py-3 px-2 active" title="Report" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Report">
+                          <i class='bx bx-alarm-exclamation' style="color: #FFFFFF;"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="./detail.html" class="nav-link py-3 px-2" title="Detail" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Detail">
+                          <i class='bx bxs-file-doc' style="color: #FFFFFF;"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="./settings.html" class="nav-link py-3 px-2" title="Setting" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Setting">
+                          <i class='bx bx-cog' style="color: #FFFFFF;"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="../index.html" class="nav-link py-3 px-2 mt-5" title="Logout" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Power">
+                          <i class='bx bx-power-off' style="color: #FFFFFF;"></i>
+                      </a>
+                  </li>
+                </ul>
+                </div>
+            </div>
+          <!-- End Side Navbar -->
+
+          <div class="col ms-2 me-2 vh-100" style="color: black; background-color: #E5E5E5; overflow-y: hidden;">
+            <h1 class="d-flex justify-content-center align-items-center"><strong>REPORT</strong></h1>
+            <div class="row" style="background-color: #E5E5E5;">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mt-2">
+                          <li class="nav-item">
+                            <a class="btn btn-warning" id="newAssetButton" aria-current="page" href="#" style="color: black; display: none;">New Asset</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="row" id="mapContainer" style="border: 1px solid white;">
+                <img src="../asset/markets-map.svg" alt="" style="width: 1300px; height: 70vh;">
+                <div class="marker1" style="position: absolute; left: 72%; top: 65%; transform: translate(-50%, -50%); background-color: navy; width: 5px; height: 20px; border-radius: 50%;"  data-marker-id="1"></div>
+                <div class="marker2" style="position: absolute; left: 69%; top: 53%; transform: translate(-50%, -50%); background-color: navy; width: 5px; height: 20px; border-radius: 50%;" data-marker-id="2"></div>
+                <div class=" marker3" style="position: absolute; left: 65%; top: 23%; transform: translate(-50%, -50%); background-color: navy; width: 5px; height: 20px; border-radius: 50%;" data-marker-id="3"></div>
+                <div class=" marker4" style="position: absolute; left: 32%; top: 23%; transform: translate(-50%, -50%); background-color: navy; width: 5px; height: 20px; border-radius: 50%;" data-marker-id="4"></div>
+                <div class=" marker5" style="position: absolute; left: 40%; top: 58%; transform: translate(-50%, -50%); background-color: navy; width: 5px; height: 20px; border-radius: 50%;" data-marker-id="5"></div>
+            </div>
+            <div class="row report-menu">
+                <h4 class="m-2">REPORT</h4>
+                <div class="row m-2 d-flex" style="font-size: 30px;">
+                    <i class='bx bxs-bell-ring' style="color: red;"> Machine 2 - Alert: There is an issue with the power substation.</i>
+                </div>
+            </div>
+          </div>
+              
+          <!-- Mini form container -->
+          <div id="miniFormContainer" style="display: none; padding: 20px;">
+            <!-- Mini form content goes here -->
+            <form>
+                <div class="mb-3">
+                    <label for="assetName" class="form-label">Add Machine</label>
+                    <input type="text" class="form-control" id="machineName" placeholder="Enter Macine Name">
+                    <input type="text" class="form-control" id="xCoordinate" placeholder="Enter x">
+                    <input type="text" class="form-control" id="yCoordinate" placeholder="Enter y">
+                </div>
+                <button id="newMachineForm" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+              
+          </div>
+        </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+       document.querySelector('.marker2').addEventListener('click', function() {
+        var reportMenu = document.querySelector('.report-menu');
+        reportMenu.style.display = (reportMenu.style.display === 'none' || reportMenu.style.display === '') ? 'block' : 'none';
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const newAssetButton = document.getElementById('newAssetButton');
+        const miniFormContainer = document.getElementById('miniFormContainer');
+        const newMachineForm = document.getElementById('newMachineForm');
+        const mapContainer = document.getElementById('mapContainer');
+
+        newAssetButton.addEventListener('click', function (event) {
+            event.preventDefault();
+            // Toggle the display of the mini form container
+            miniFormContainer.style.display = (miniFormContainer.style.display === 'none' || miniFormContainer.style.display === '') ? 'block' : 'none';
+        });
+
+        // Add event listener to your markers
+        const markers = document.querySelectorAll('.marker');
+        markers.forEach(marker => {
+            marker.addEventListener('click', function () {
+                var reportMenu = document.querySelector('.report-menu');
+                reportMenu.style.display = 'none'; // Hide report menu
+                // Toggle the display of the mini form container
+                miniFormContainer.style.display = (miniFormContainer.style.display === 'none' || miniFormContainer.style.display === '') ? 'block' : 'none';
+            });
+        });
+
+        // Handle form submission
+        newMachineForm.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            // Get form values
+            const machineName = document.getElementById('machineName').value;
+            const xCoordinate = document.getElementById('xCoordinate').value;
+            const yCoordinate = document.getElementById('yCoordinate').value;
+
+            // Create a new marker
+            const newMarker = document.createElement('div');
+            newMarker.className = 'marker';
+            newMarker.style.left = `${xCoordinate}%`;
+            newMarker.style.top = `${yCoordinate}%`;
+            newMarker.setAttribute('data-marker-id', markers.length + 1);
+            newMarker.setAttribute('data-machine-name', machineName);
+
+            // Add the new marker to the map container
+            mapContainer.appendChild(newMarker);
+
+            // Hide the mini form container
+            miniFormContainer.style.display = 'none';
+
+            // You can perform additional actions with the form values if needed
+            console.log('Machine Name:', machineName);
+            console.log('X Coordinate:', xCoordinate);
+            console.log('Y Coordinate:', yCoordinate);
+        });
+    });
+    </script>
+
+  </body>
+</html>

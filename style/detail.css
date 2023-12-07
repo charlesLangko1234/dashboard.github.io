@@ -1,0 +1,24 @@
+/* Add your styles here */
+table {
+    width: 100%;
+    color: black;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    text-align: left;
+    padding: 8px; /* Sesuaikan dengan kebutuhan Anda */
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tbody tr:hover {
+    background-color: #d9d9d9;
+  }
+  
